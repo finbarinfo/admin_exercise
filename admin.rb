@@ -31,3 +31,36 @@ require 'pry'
 
 
 #call the function!!
+
+def user_permission(signed_in, admin, paid, cancelled)
+	if paid == "N" or cancelled == "Y"
+		return "go away"
+	elsif signed_in == "Y" and admin == "Y"
+		return "you can see and change all the pages"
+	elsif signed_in == "Y" and admin == "N"
+		return "you can see all the pages"
+	elsif signed_in == "N"
+		return "you can't see any of the pages, please sign in"
+	end
+
+end
+
+puts(did you pay your bills)
+user_signed_in = gets.strip
+
+puts(did you cancel a deal)
+user_cancel = gets.strip
+
+puts(are you an admin)
+user_admin = gets.strip
+
+puts(are you signed_in)
+user_signed_in = gets.strip
+
+user_permission(user_paid, user_cancel, user_admin, user_signed_in)
+
+
+
+
+		
+		
