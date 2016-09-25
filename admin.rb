@@ -45,16 +45,16 @@ def user_permission(signed_in, admin, paid, cancelled)
 
 end
 
-puts(did you pay your bills)
-user_signed_in = gets.strip
+puts("did you pay your bills")
+user_paid = gets.strip
 
-puts(did you cancel a deal)
+puts("did you cancel a deal")
 user_cancel = gets.strip
 
-puts(are you an admin)
+puts("are you an admin")
 user_admin = gets.strip
 
-puts(are you signed_in)
+puts("are you signed_in")
 user_signed_in = gets.strip
 
 user_permission(user_paid, user_cancel, user_admin, user_signed_in)
